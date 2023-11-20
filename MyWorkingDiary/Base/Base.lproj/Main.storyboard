@@ -17,10 +17,20 @@
             </objects>
             <point key="canvasLocation" x="1618" y="-280"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Calendar-->
+        <scene sceneID="3eh-mf-g3h">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Calendar" id="dfq-65-CUx" userLabel="Calendar" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="6PJ-mp-ffc"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tX6-qf-Id9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1650" y="-204"/>
+        </scene>
+        <!--Base Navigation Controller-->
         <scene sceneID="n65-HK-md7">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BYK-um-nTy" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BYK-um-nTy" customClass="BaseNavigationController" customModule="MyWorkingDiary" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hbl-pL-Eyz">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -35,10 +45,10 @@
             </objects>
             <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Base Tab Bar Controller-->
         <scene sceneID="43i-qH-fzH">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="qth-Fj-EMH" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="qth-Fj-EMH" customClass="BaseTabBarController" customModule="MyWorkingDiary" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="2qG-cH-weW"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="30z-oe-Ptr">
@@ -48,6 +58,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="KYm-vf-D6S" kind="relationship" relationship="viewControllers" id="Jr6-3W-RBb"/>
+                        <segue destination="dfq-65-CUx" kind="relationship" relationship="viewControllers" id="FC9-kB-AkP"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7S7-97-XBM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -12,7 +12,10 @@
 		B3719ECB2B0B085000B2D77A /* Differentiator in Frameworks */ = {isa = PBXBuildFile; productRef = B3719ECA2B0B085000B2D77A /* Differentiator */; };
 		B3719ECD2B0B085000B2D77A /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = B3719ECC2B0B085000B2D77A /* RxDataSources */; };
 		B3719ED02B0B085E00B2D77A /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = B3719ECF2B0B085E00B2D77A /* DGCharts */; };
-		B3719ED22B0B085E00B2D77A /* DGChartsDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = B3719ED12B0B085E00B2D77A /* DGChartsDynamic */; };
+		B3719ED52B0B18B500B2D77A /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3719ED42B0B18B500B2D77A /* Calendar.storyboard */; };
+		B3719ED72B0B18FA00B2D77A /* CalenderMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3719ED62B0B18FA00B2D77A /* CalenderMainViewController.swift */; };
+		B3719EDB2B0B1CDF00B2D77A /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3719EDA2B0B1CDF00B2D77A /* BaseNavigationController.swift */; };
+		B3719EDD2B0B1D0B00B2D77A /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3719EDC2B0B1D0B00B2D77A /* BaseTabBarController.swift */; };
 		B3D7CF5F2B0B01C60011271A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D7CF5E2B0B01C60011271A /* AppDelegate.swift */; };
 		B3D7CF612B0B01C60011271A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D7CF602B0B01C60011271A /* SceneDelegate.swift */; };
 		B3D7CF632B0B01C60011271A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D7CF622B0B01C60011271A /* ViewController.swift */; };
@@ -42,8 +45,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B3719ED92B0B1A2D00B2D77A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		B3719EC32B0B075600B2D77A /* DiaryMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DiaryMain.storyboard; sourceTree = "<group>"; };
+		B3719ED42B0B18B500B2D77A /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
+		B3719ED62B0B18FA00B2D77A /* CalenderMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderMainViewController.swift; sourceTree = "<group>"; };
+		B3719EDA2B0B1CDF00B2D77A /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		B3719EDC2B0B1D0B00B2D77A /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		B3D7CF5B2B0B01C60011271A /* MyWorkingDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWorkingDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3D7CF5E2B0B01C60011271A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3D7CF602B0B01C60011271A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,7 +88,6 @@
 				B3719ED02B0B085E00B2D77A /* DGCharts in Frameworks */,
 				B3719ECD2B0B085000B2D77A /* RxDataSources in Frameworks */,
 				B3719ECB2B0B085000B2D77A /* Differentiator in Frameworks */,
-				B3719ED22B0B085E00B2D77A /* DGChartsDynamic in Frameworks */,
 				B3719EC72B0B082200B2D77A /* FSCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,6 +109,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B3719ED32B0B189500B2D77A /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				B3719ED42B0B18B500B2D77A /* Calendar.storyboard */,
+				B3719ED62B0B18FA00B2D77A /* CalenderMainViewController.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
 		B3D7CF522B0B01C60011271A = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +143,7 @@
 			children = (
 				B3D7CF8E2B0B02DB0011271A /* Base */,
 				B3D7CF902B0B02FD0011271A /* DiaryMain */,
+				B3719ED32B0B189500B2D77A /* Calendar */,
 				B3D7CF602B0B01C60011271A /* SceneDelegate.swift */,
 				B3D7CF5E2B0B01C60011271A /* AppDelegate.swift */,
 				B3D7CF672B0B01C60011271A /* Assets.xcassets */,
@@ -146,6 +175,8 @@
 				B3D7CF692B0B01C60011271A /* LaunchScreen.storyboard */,
 				B3D7CF642B0B01C60011271A /* Main.storyboard */,
 				B3D7CF622B0B01C60011271A /* ViewController.swift */,
+				B3719EDA2B0B1CDF00B2D77A /* BaseNavigationController.swift */,
+				B3719EDC2B0B1D0B00B2D77A /* BaseTabBarController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -177,6 +208,7 @@
 				B3D7CF572B0B01C60011271A /* Sources */,
 				B3D7CF582B0B01C60011271A /* Frameworks */,
 				B3D7CF592B0B01C60011271A /* Resources */,
+				B3719ED92B0B1A2D00B2D77A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -188,7 +220,6 @@
 				B3719ECA2B0B085000B2D77A /* Differentiator */,
 				B3719ECC2B0B085000B2D77A /* RxDataSources */,
 				B3719ECF2B0B085E00B2D77A /* DGCharts */,
-				B3719ED12B0B085E00B2D77A /* DGChartsDynamic */,
 			);
 			productName = MyWorkingDiary;
 			productReference = B3D7CF5B2B0B01C60011271A /* MyWorkingDiary.app */;
@@ -287,6 +318,7 @@
 				B3D7CF6B2B0B01C60011271A /* LaunchScreen.storyboard in Resources */,
 				B3719EC42B0B075600B2D77A /* DiaryMain.storyboard in Resources */,
 				B3D7CF682B0B01C60011271A /* Assets.xcassets in Resources */,
+				B3719ED52B0B18B500B2D77A /* Calendar.storyboard in Resources */,
 				B3D7CF662B0B01C60011271A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,7 +344,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3719EDD2B0B1D0B00B2D77A /* BaseTabBarController.swift in Sources */,
+				B3719ED72B0B18FA00B2D77A /* CalenderMainViewController.swift in Sources */,
 				B3D7CF632B0B01C60011271A /* ViewController.swift in Sources */,
+				B3719EDB2B0B1CDF00B2D77A /* BaseNavigationController.swift in Sources */,
 				B3D7CF932B0B034A0011271A /* DiaryMainViewController.swift in Sources */,
 				B3D7CF5F2B0B01C60011271A /* AppDelegate.swift in Sources */,
 				B3D7CF612B0B01C60011271A /* SceneDelegate.swift in Sources */,
@@ -720,11 +755,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B3719ECE2B0B085E00B2D77A /* XCRemoteSwiftPackageReference "Charts" */;
 			productName = DGCharts;
-		};
-		B3719ED12B0B085E00B2D77A /* DGChartsDynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B3719ECE2B0B085E00B2D77A /* XCRemoteSwiftPackageReference "Charts" */;
-			productName = DGChartsDynamic;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
