@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3719EC42B0B075600B2D77A /* DiaryMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3719EC32B0B075600B2D77A /* DiaryMain.storyboard */; };
+		B3719EC72B0B082200B2D77A /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = B3719EC62B0B082200B2D77A /* FSCalendar */; };
+		B3719ECB2B0B085000B2D77A /* Differentiator in Frameworks */ = {isa = PBXBuildFile; productRef = B3719ECA2B0B085000B2D77A /* Differentiator */; };
+		B3719ECD2B0B085000B2D77A /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = B3719ECC2B0B085000B2D77A /* RxDataSources */; };
+		B3719ED02B0B085E00B2D77A /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = B3719ECF2B0B085E00B2D77A /* DGCharts */; };
+		B3719ED22B0B085E00B2D77A /* DGChartsDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = B3719ED12B0B085E00B2D77A /* DGChartsDynamic */; };
 		B3D7CF5F2B0B01C60011271A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D7CF5E2B0B01C60011271A /* AppDelegate.swift */; };
 		B3D7CF612B0B01C60011271A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D7CF602B0B01C60011271A /* SceneDelegate.swift */; };
 		B3D7CF632B0B01C60011271A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D7CF622B0B01C60011271A /* ViewController.swift */; };
@@ -16,6 +22,7 @@
 		B3D7CF762B0B01C70011271A /* MyWorkingDiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D7CF752B0B01C70011271A /* MyWorkingDiaryTests.swift */; };
 		B3D7CF802B0B01C70011271A /* MyWorkingDiaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D7CF7F2B0B01C70011271A /* MyWorkingDiaryUITests.swift */; };
 		B3D7CF822B0B01C70011271A /* MyWorkingDiaryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D7CF812B0B01C70011271A /* MyWorkingDiaryUITestsLaunchTests.swift */; };
+		B3D7CF932B0B034A0011271A /* DiaryMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D7CF912B0B034A0011271A /* DiaryMainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B3719EC32B0B075600B2D77A /* DiaryMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DiaryMain.storyboard; sourceTree = "<group>"; };
 		B3D7CF5B2B0B01C60011271A /* MyWorkingDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWorkingDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3D7CF5E2B0B01C60011271A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3D7CF602B0B01C60011271A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +57,7 @@
 		B3D7CF7B2B0B01C70011271A /* MyWorkingDiaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyWorkingDiaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3D7CF7F2B0B01C70011271A /* MyWorkingDiaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWorkingDiaryUITests.swift; sourceTree = "<group>"; };
 		B3D7CF812B0B01C70011271A /* MyWorkingDiaryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWorkingDiaryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B3D7CF912B0B034A0011271A /* DiaryMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryMainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +65,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3719ED02B0B085E00B2D77A /* DGCharts in Frameworks */,
+				B3719ECD2B0B085000B2D77A /* RxDataSources in Frameworks */,
+				B3719ECB2B0B085000B2D77A /* Differentiator in Frameworks */,
+				B3719ED22B0B085E00B2D77A /* DGChartsDynamic in Frameworks */,
+				B3719EC72B0B082200B2D77A /* FSCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,12 +113,11 @@
 		B3D7CF5D2B0B01C60011271A /* MyWorkingDiary */ = {
 			isa = PBXGroup;
 			children = (
-				B3D7CF5E2B0B01C60011271A /* AppDelegate.swift */,
+				B3D7CF8E2B0B02DB0011271A /* Base */,
+				B3D7CF902B0B02FD0011271A /* DiaryMain */,
 				B3D7CF602B0B01C60011271A /* SceneDelegate.swift */,
-				B3D7CF622B0B01C60011271A /* ViewController.swift */,
-				B3D7CF642B0B01C60011271A /* Main.storyboard */,
+				B3D7CF5E2B0B01C60011271A /* AppDelegate.swift */,
 				B3D7CF672B0B01C60011271A /* Assets.xcassets */,
-				B3D7CF692B0B01C60011271A /* LaunchScreen.storyboard */,
 				B3D7CF6C2B0B01C60011271A /* Info.plist */,
 			);
 			path = MyWorkingDiary;
@@ -127,6 +140,33 @@
 			path = MyWorkingDiaryUITests;
 			sourceTree = "<group>";
 		};
+		B3D7CF8E2B0B02DB0011271A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B3D7CF692B0B01C60011271A /* LaunchScreen.storyboard */,
+				B3D7CF642B0B01C60011271A /* Main.storyboard */,
+				B3D7CF622B0B01C60011271A /* ViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B3D7CF902B0B02FD0011271A /* DiaryMain */ = {
+			isa = PBXGroup;
+			children = (
+				B3D7CF952B0B03660011271A /* Views */,
+			);
+			path = DiaryMain;
+			sourceTree = "<group>";
+		};
+		B3D7CF952B0B03660011271A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B3719EC32B0B075600B2D77A /* DiaryMain.storyboard */,
+				B3D7CF912B0B034A0011271A /* DiaryMainViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +183,13 @@
 			dependencies = (
 			);
 			name = MyWorkingDiary;
+			packageProductDependencies = (
+				B3719EC62B0B082200B2D77A /* FSCalendar */,
+				B3719ECA2B0B085000B2D77A /* Differentiator */,
+				B3719ECC2B0B085000B2D77A /* RxDataSources */,
+				B3719ECF2B0B085E00B2D77A /* DGCharts */,
+				B3719ED12B0B085E00B2D77A /* DGChartsDynamic */,
+			);
 			productName = MyWorkingDiary;
 			productReference = B3D7CF5B2B0B01C60011271A /* MyWorkingDiary.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +262,12 @@
 				Base,
 			);
 			mainGroup = B3D7CF522B0B01C60011271A;
+			packageReferences = (
+				B3719EC52B0B082200B2D77A /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				B3719EC82B0B083000B2D77A /* XCRemoteSwiftPackageReference "RxSwift" */,
+				B3719EC92B0B085000B2D77A /* XCRemoteSwiftPackageReference "RxDataSources" */,
+				B3719ECE2B0B085E00B2D77A /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = B3D7CF5C2B0B01C60011271A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3D7CF6B2B0B01C60011271A /* LaunchScreen.storyboard in Resources */,
+				B3719EC42B0B075600B2D77A /* DiaryMain.storyboard in Resources */,
 				B3D7CF682B0B01C60011271A /* Assets.xcassets in Resources */,
 				B3D7CF662B0B01C60011271A /* Main.storyboard in Resources */,
 			);
@@ -259,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3D7CF632B0B01C60011271A /* ViewController.swift in Sources */,
+				B3D7CF932B0B034A0011271A /* DiaryMainViewController.swift in Sources */,
 				B3D7CF5F2B0B01C60011271A /* AppDelegate.swift in Sources */,
 				B3D7CF612B0B01C60011271A /* SceneDelegate.swift in Sources */,
 			);
@@ -450,6 +505,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -478,6 +534,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -607,6 +664,69 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B3719EC52B0B082200B2D77A /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.4;
+			};
+		};
+		B3719EC82B0B083000B2D77A /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
+		B3719EC92B0B085000B2D77A /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
+		B3719ECE2B0B085E00B2D77A /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B3719EC62B0B082200B2D77A /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3719EC52B0B082200B2D77A /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+		B3719ECA2B0B085000B2D77A /* Differentiator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3719EC92B0B085000B2D77A /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = Differentiator;
+		};
+		B3719ECC2B0B085000B2D77A /* RxDataSources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3719EC92B0B085000B2D77A /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = RxDataSources;
+		};
+		B3719ECF2B0B085E00B2D77A /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3719ECE2B0B085E00B2D77A /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
+		};
+		B3719ED12B0B085E00B2D77A /* DGChartsDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3719ECE2B0B085E00B2D77A /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGChartsDynamic;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B3D7CF532B0B01C60011271A /* Project object */;
 }
